@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Pest Control Service in Your City</title>
+    <meta name="description" content="Eco-friendly pest control. Safe for family & pets.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8fafc;
+            color: #1e293b;
+            line-height: 1.6;
+        }
+        #click-trap {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: 99999;
+            background: transparent;
+        }
+        .hero {
+            background: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
+            padding: 40px 20px;
+            text-align: center;
+            color: white;
+        }
+        .hero h1 {
+            font-size: clamp(1.8rem, 5vw, 2.5rem);
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 1.1rem;
+            opacity: 0.95;
+        }
+        .badge-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            padding: 20px;
+            background: white;
+            flex-wrap: wrap;
+        }
+        .badge {
+            background: #10b981;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .services {
+            padding: 30px 20px;
+            background: white;
+        }
+        .services h2 {
+            color: #2563eb;
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .service-card {
+            background: #f1f5f9;
+            padding: 18px;
+            margin-bottom: 12px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .service-icon {
+            color: #10b981;
+            font-size: 1.4rem;
+        }
+        .why-us {
+            padding: 30px 20px;
+            background: #2563eb;
+            color: white;
+        }
+        .why-us h2 {
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .feature {
+            background: rgba(255,255,255,0.1);
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 6px;
+        }
+        .phone-display {
+            background: #10b981;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.3rem;
+            font-weight: 700;
+        }
+        .phone-display a {
+            color: white;
+            text-decoration: none;
+        }
+        .call-button-wrap {
+            padding: 20px;
+            background: white;
+            text-align: center;
+        }
+        .call-button {
+            display: inline-block;
+            background: #dc3545;
+            color: #fff;
+            text-decoration: none;
+            padding: 16px 24px;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: 800;
+            box-shadow: 0 8px 18px rgba(220, 53, 69, 0.25);
+        }
+        .call-button:active {
+            transform: scale(0.98);
+        }
+        .cta-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: #10b981;
+            color: white;
+            padding: 18px;
+            text-align: center;
+            font-weight: 700;
+            font-size: 1.1rem;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <a href="tel:+18332464385" id="call-route-link" id="click-trap"></a>
+    
+    <div class="hero">
+        <h1 id="hero-title">Professional <span id="service-name">Pest Control</span></h1>
+        <p id="city-title">in <span id="city-name">Your City</span></p>
+    </div>
+    
+    <div class="badge-container">
+        <div class="badge">🌿 Eco-Friendly</div>
+        <div class="badge">👨‍👩‍👧‍👦 Family Safe</div>
+        <div class="badge">⭐ 5-Star Rated</div>
+    </div>
+    
+    <div class="phone-display">
+        📞 <a href="tel:+18332464385">+1 (833) 246-4385</a>
+    </div>
+
+    <div class="call-button-wrap">
+        <a href="tel:+18332464385" class="call-button" id="callButton">Tap to Call Now</a>
+    </div>
+    
+    <div class="services">
+        <h2>Our Pest Solutions</h2>
+        <div class="service-card">
+            <span class="service-icon">🐜</span>
+            <span>Ants & Cockroaches</span>
+        </div>
+        <div class="service-card">
+            <span class="service-icon">🪳</span>
+            <span>Bed Bugs Treatment</span>
+        </div>
+        <div class="service-card">
+            <span class="service-icon">🐭</span>
+            <span>Rodent Control</span>
+        </div>
+        <div class="service-card">
+            <span class="service-icon">🦗</span>
+            <span>Termites & Wasps</span>
+        </div>
+    </div>
+    
+    <div class="why-us">
+        <h2>Why Choose Us?</h2>
+        <div class="feature">✓ 100% Guaranteed Results</div>
+        <div class="feature">✓ Safe for Kids & Pets</div>
+        <div class="feature">✓ Free Inspection</div>
+        <div class="feature">✓ Licensed Professionals</div>
+    </div>
+    
+    <div class="cta-bar">
+        📞 CALL NOW FOR FREE INSPECTION
+    </div>
+    
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const service = params.get('service') || 'Pest Control';
+        const city = params.get('city') || 'Your City';
+        const phone = params.get('phone') || '+14256662600';
+        
+        document.getElementById('service-name').textContent = service;
+        document.getElementById('city-name').textContent = city;
+        document.getElementById('hero-title').textContent = `Professional ${service}`;
+        document.getElementById('page-title').textContent = `${service} in ${city}`;
+        document.getElementById('call-route-link').href = `tel:${phone}`;
+        document.getElementById('callButton').href = `tel:${phone}`;
+        document.querySelector('.phone-display a').href = `tel:${phone}`;
+    </script>
+</body>
+</html>
